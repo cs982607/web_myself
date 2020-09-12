@@ -1,0 +1,518 @@
+.grid{
+    display:grid;
+    background-color: white; 
+    height: 100vh;
+    grid-template:
+    "head_wrapper head_wrapper" 0.5fr
+    "content content" 4fr
+    "footer footer" 0.5fr
+    ;
+    font-family: 'Jua', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+}
+
+.head_wrapper{
+    position: fixed;
+    top:0%;
+    width: 99%;
+    height: 20%;
+    margin-bottom: 1%;
+    grid-area: head_wrapper;
+    align-items: center;
+}
+.head_wrapper_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+}
+
+.home{
+    text-decoration: none;
+    color: black;
+}
+    
+    
+.home:hover{
+color: darksalmon;
+background-color: whitesmoke;
+
+}
+
+.name{
+    grid-area: name;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+}
+
+#name_link:hover{
+    color: darksalmon;
+    background-color: whitesmoke
+}
+
+.nav{
+    grid-area: nav;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    top: 0%;
+    left: 0%;
+}
+
+
+#menu ul li {
+    list-style: none;
+    color: bisque;
+    background-color: white;
+    float: left;
+    line-height: 12px;
+    vertical-align: middle;
+    text-align: center;
+    left: 0%;
+    
+}
+
+#menu .menu_link {
+    text-decoration: cornflowerblue;
+    color:black;
+    display: flex;
+    width: 80px; /*얘는 수정 안되겠다*/
+    font-size: 70%;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+
+#menu .menu_link:hover{
+    color: darksalmon;
+    background-color: whitesmoke;
+}
+
+
+/*content start*/
+.content{
+    grid-area:content;
+    background: #faf7f7;
+    font-family: 'Montserrat', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:1%
+    /* margin-top: 2%; */
+}
+
+.content_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content_box_button_button{
+    text-decoration: none;
+    background-color: #faf7f7;
+    color: white;
+    text-emphasis: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius:  100% solid white;
+    font-size: 10%;
+    height: 2.5vh;
+    width: 100%;    
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+
+
+.content_box_image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 170%;
+    width: 25%;
+    background-color: white;
+
+}
+
+#mypicture{
+    /*
+    width: 130px ;
+    height: 130px;
+    */
+    width: 40%;
+    height: 100%;
+    border-radius: 100%;
+    align-self: center;
+
+}
+#pictureofme{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.content_box_hello{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 170%;
+    width: 25%;
+    background-color: whitesmoke;
+
+}
+#Hello{
+    font-size: 300%;
+    align-self: center;
+}
+
+#here{
+    font-size: 1fr;
+    font-display: space-around;
+    align-self: center;
+}
+
+#blah{
+    font-size: 20%;
+}
+
+.content_box_button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.footer{
+    padding-top: 3%;
+    display: grid;
+    font-size: 10px;
+    grid-area:footer;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif; 
+    grid-template: 
+    "copy_right contact"
+}
+.copy_right{
+    grid-area:copy_right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+
+.contact{
+    grid-area:contact;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    
+}
+
+.phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+}
+#call{
+    align-self: center;
+}
+
+.mail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+}
+
+#write{
+    align-self: center;
+}
+
+.sns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 110px;
+}
+#follow{
+    align-self:center;
+}
+.sns_image{
+    align-self: center;
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 300px) and (max-width: 480px) {
+    
+    .html{
+        height: 100%;
+        width: 100%;
+    }
+    .grid{
+        display:grid;
+        background-color: white;
+        gap : 0px;
+        height: 100%;
+        grid-template:
+        "head_wrapper head_wrapper" 0.5fr
+        "content content" 7fr
+        "footer footer" 0.5fr
+        ;
+    }
+    
+    .head_wrapper{
+        position: fixed;
+        top:0px;
+        width: 99%;
+        height: 20%;
+        grid-area: head_wrapper;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .head_wrapper_content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        width: 100%;
+        background-color: white;
+    
+    
+    }
+    
+    .home{
+        
+        text-decoration: none;
+        
+        color: black;
+        
+        }
+        
+        
+    .home:hover{
+    
+    color: darksalmon;
+    
+    background-color: whitesmoke;
+    
+    }
+    
+    .name{
+        grid-area: name;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+    
+    }
+    #name_link:hover{
+        color: darksalmon;
+        background-color: whitesmoke;
+        
+    }
+    
+    
+    
+    
+    .nav{
+        grid-area: nav;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    
+    
+    }
+    #menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    
+    
+    #menu ul li {
+        list-style: none;
+        color: bisque;
+        background-color: white;
+        float: left;
+        line-height: 15px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    #menu .menu_link {
+        text-decoration: cornflowerblue;
+        color:black;
+        display: flex;
+        width: 80px;
+        font-size: 12px;
+        justify-content: flex-end;
+        align-content: flex-end;
+    }
+    
+    #menu .menu_link:hover{
+        color: darksalmon;
+        background-color: whitesmoke;
+    }
+    
+    /*content start*/
+    
+    .content{
+        grid-area:content;
+        background: #faf7f7;
+        font-family: 'Montserrat', sans-serif; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;
+        /* padding-top: ;  */
+    }
+    .content_aboutme_text{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;  
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px; /*vh do change depeding on screen size*/
+    
+    }
+    .content_picture{
+        border-radius: 100%;
+    }
+    
+    .content_picture_text{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .content_box_hello{
+        width: 190px;
+        height: 320px;
+    }
+    .content_box_image{
+        width: 190px;
+        height: 320px;
+        font-size: smaller;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content_box_button_button{
+        width: 63px;
+        height: 15px;
+    }
+    .content_box_button_button > a{
+        text-align: center;
+        font-size: 7px;
+    }
+    /*footer start*/
+    .footer{
+        padding-top: 3px;
+        display: grid;
+        font-size: 5px;
+        grid-area:footer;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif; 
+        grid-template: 
+        "copy_right contact"
+    }
+    .copy_right{
+        grid-area:copy_right;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-family: 'Montserrat', sans-serif; 
+    }
+    
+    
+    .contact{
+        grid-area:contact;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+    
+        
+    }
+    
+    .phone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+    }
+    #call{
+        align-self: center;
+    }
+    
+    .mail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+    }
+    
+    #write{
+        align-self: center;
+    }
+    
+    .sns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 110px;
+    }
+    #follow{
+        align-self:center;
+    }
+    .sns_image{
+        align-self: center;
+    }
+    .footer{
+        bottom: 0px;
+    }
+  }
+
+  #page{width :820px; margin: 0px auto;}
